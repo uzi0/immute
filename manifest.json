@@ -12,7 +12,19 @@
       "suggested_key": {
         "default": "Alt+M"
       },
-      "description": "Mute the currently active tab"
+      "description": "Mute/unmute the currently active tab"
+    },
+    "mute_all": {
+      "suggested_key": {
+        "default": "Alt+Shift+M"
+      },
+      "description": "Mute/unmute all tabs"
+    },
+    "mute_except": {
+      "suggested_key": {
+        "default": "Alt+Shift+N"
+      },
+      "description": "Mute/unmute all tabs besides the current one"
     }
   },
   "browser_action": {
