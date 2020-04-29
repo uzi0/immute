@@ -1,0 +1,34 @@
+{
+  "name": "Immute: Keyboard Tab Mute",
+  "version": "1.0",
+  "description": "Ever wondered why you can't mute your tab with a keyboard shortcut in *current year*? Well, now you can.",
+  "permissions": ["activeTab"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "commands": {
+    "mute_tab": {
+      "suggested_key": {
+        "default": "Alt+M"
+      },
+      "description": "Mute the currently active tab"
+    }
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/immute_16.png",
+      "32": "images/immute_32.png",
+      "48": "images/immute_48.png",
+      "128": "images/immute_128.png"
+    }
+  },
+  "icons": {
+    "16": "images/immute_16.png",
+    "32": "images/immute_32.png",
+    "48": "images/immute_48.png",
+    "128": "images/immute_128.png"
+  },
+  "manifest_version": 2
+}
