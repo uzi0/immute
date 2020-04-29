@@ -2,7 +2,6 @@
   "name": "Immute: Keyboard Tab Mute",
   "version": "1.0",
   "description": "Ever wondered why you can't mute your tab with a keyboard shortcut in *current year*? Well, now you can.",
-  "permissions": ["activeTab"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
