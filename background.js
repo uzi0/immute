@@ -28,6 +28,7 @@ chrome.commands.onCommand.addListener(command => {
     };
 
     if (command === "mute_except") {
+        // this command is idempotent, unmuting all except current is undesirable
         muted = false;
         toggleAll()
         // wait for toggleAll to finish executing
