@@ -3,8 +3,9 @@
     <head>
         <style>
             body {
-                background-color:darkslategray;
-                padding: 0 10px;
+                background-color: darkslategray;
+                padding: 0 20px;
+                width: 200px;
             }
             h1 {
                 color:rgb(212, 89, 114);
@@ -18,17 +19,37 @@
                 color:coral;
                 font-size: medium;
             }
+            button {
+                border-radius: 5px;
+                background-color: coral;
+                box-shadow: 1px 1px darkred;
+                color: darkslategray;
+                font-size: medium;
+                font-weight: bold;
+                border: none;
+                cursor: pointer;
+                padding: 5px;
+            }
+            button:hover {
+                background-color: rgb(212, 89, 114);
+                color: white;
+            }
+            button:active {
+                transform: translateY(2px);
+                box-shadow: none;
+            }
         </style>
+        <script src="popup.js"></script>
     </head>
     <body>
 
         <div>
             <img src="images/immute_32.png">
             <h1>Immute</h1>
-            <p>ALT+M: mute current tab </p>
-            <p>ALT+SHIFT+M: mute all open tabs</p>
-            <p>ALT+SHIFT+N: mute all open tabs besides current</p>
-            <p>Customize these shortcuts at chrome://extensions/shortcuts</p>
+            <p><em id="mute_tab"></em>: mute current tab </p>
+            <p><em id="mute_all"></em>: mute all tabs</p>
+            <p><em id="mute_except"></em>: mute all open tabs besides current one</p>
+            <button id="customize">Customize your shortcuts</button>
             <p>Tip: Change "In Chrome" to "Global" to mute from outside of Chrome!</p>
         </div>
 
