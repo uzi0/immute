@@ -1,7 +1,7 @@
 {
-  "name": "Immute: Keyboard Tab Mute",
-  "version": "1.0",
-  "description": "Ever wondered why you can't mute your tab with a keyboard shortcut in *current year*? Well, now you can.",
+  "name": "Immute: Mute Tabs via Keyboard",
+  "version": "1.0.1",
+  "description": "Ever wondered why you can't simply mute your tab with a keyboard shortcut in *current year*? Well, now you can.",
   "background": {
     "scripts": ["background.js"],
     "persistent": false
